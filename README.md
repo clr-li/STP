@@ -30,4 +30,6 @@ The micro lives in .deta/portal-micro. The server file (index.js) uses express. 
         "visor": "disabled",
         "http_auth": "disabled"
 }
+```
+For editing purposes, a copy of index.js exists in the main glitch root directory which can be edited and then copied to deta cp index.js .deta/portal-micro/index.js
 ![Screen Shot 2022-12-15 at 10 53 54 PM](https://user-images.githubusercontent.com/111320104/208040201-25a50160-ec66-4ce9-9982-571e25e3794c.jpg)
