@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Seattle Tutoring Partners</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png"/>
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+    
+    <link rel="stylesheet/less" type="text/css" href="slideshow.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    
+    <style>
+      .fac:before, .fac:before, .fac:before {
+        position: absolute;
+        margin: auto;
+        left: 0; right: 0;
+        margin-top: 8px;
+      }
+      .fa-home:before {
+        margin-top: 0px;
+        font-size: 1.2em;
+      }
+      .fa-book:before {
+        margin-top: 6px;
+      }
+      .fa-file:before {
+        left: 3px;
+        margin-top: 4px;
+      }
+      .fa-music:before {
+        right: 4px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+
+    <main id="content">
+      <article id="article" style="overflow: hidden; padding-bottom: 0px">
+        <h1 style="margin-left: max(-24px,-8vw); padding-right: 24px; width: min(100vw, 1000px); text-align: center; overflow: visible"><img src="/assets/logo.png">eattle Tutoring Partners</h1>
+        <div class="slideshow" style="border-radius: none; width: calc(100% + 48px); margin-left: -24px; height: max(400px, min(75vw, 600px))">
+            <div id="main-container" class="main-container" style="width: calc(100% + 48px); margin-left: -24px">
+                <div class="loader-container">
+                    <div class="loader"> </div>
+                    <p id="loading">Loading images...</p>
+                </div>
+            </div>
+            <div class="preloaded"></div>
+        </div>
+        <section id="Who We Are">
+            <h3>Who We Are</h3>
+            <p>
+                We are a community of life-long learners and teachers excited to share the experience we've gained as college students, high school students, concertmasters, 
+                science olympians, and beyond. Founded by Claire Li and Alexander Metzger in 2022, Seattle Tutoring Partners has passionately been bringing students and teachers 
+                together ever since.
+            </p>
+            <br>
+            <div style="width: 100%; text-align: center; margin-top: max(-10px, -1vw)">
+                <img src="/assets/founders.jpg" class="goldImage">
+            </div>
+        </section>
+        <br>
+        <section id="Our Mission" style="margin-top: max(-40px, -4vw)">
+            <h3>Our Mission</h3>
+            <p>
+              <b style="color:blueviolet">Our goal is to provide the personalized, one-on-one teaching that large classrooms cannot.</b> 
+              Whether it's your education or that of a son or daughter, we aim to provide the tutor/student-pairing and individualized lesson plan that will inspire a life-long love for learning.
+            </p>
+          <br>
+        </section>
+        <section id="Program Highlights" style="background-color: #ff85f6; margin-left: -24px; max-width: 100vw; width: calc(100% + 48px);transform: translateY(5px); color: white; padding-top: 10px; padding-bottom: 16px; text-align: center">
+          <h3 style="color: white">Program Highlights</h3>
+          <iframe id="carousel" src="/carousel.html" style="border: none; min-width: min(350px,100vw); width: 80%; border-radius: 20px; overflow: hidden; display: inline-block">Loading...</iframe>
+        </section>
+        <div style="margin-left: -24px; max-width: 100vw; width: calc(100% + 48px);padding: 20px;background-color:#b85de7;position: relative;text-align: center; transform: translateY(5px)">
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-graduation-cap"></i>
+            <p style="color: white;">Academic K-12</p></div></a>
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-file"></i>
+            <p style="color: white;">Test Prep</p></div></a>
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-music"></i>
+            <p style="color: white;">Music Lessons</p></div></a>
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-bars"></i>
+            <p style="color: white;">More</p></div></a>
+        </div>
+        <div style="margin-left: -24px; max-width: 100vw; width: calc(100% + 48px);padding: 20px;background-color:#6f42c1;position: relative;text-align: center; transform: translateY(5px)">
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-desktop"></i>
+            <p style="color: white;">Online</p></div></a>
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-book"></i>
+            <p style="color: white;">UW Libraries</p></div></a>
+          <a href="/tutoring.html"><div style="display: inline-block; position: relative"><i style="padding: 20px;background-color: white;width: 114px;height:114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: min(20px, 20vw);" class="fa fac fa-home"></i>
+            <p style="color: white;">Bothell Area</p></div></a>
+        </div>
+        <img style="width: calc(100% + 48px); margin-left: -24px; transform: translateY(5px)" src="https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/STP.png?v=1663018150263">
+      </article>
+    </main>
+    
+    <script> // slideshow code
+        var preloaded = document.querySelector('.preloaded');
+        var queue = new createjs.LoadQueue(true,null,true);
+
+        queue.on('fileload', handleLoad, this);
+
+        queue.on('progress', handleProgress, this);
+
+        queue.on('complete', handleComplete, this);
+
+        let images = [
+            {
+                id: 'Personalized',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Experienced.jpg?v=1660428239001'
+            },
+            {
+                id: 'Hands-on',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/Creative.jpg'
+            },
+            {
+                id: 'One-on-one',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Caring.jpeg?v=1660428360033'
+            },
+            {
+                id: 'Possibilities',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Recital.jpg?v=1660498891464'
+            },
+            {
+                id: 'Happy learning',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/HappyHealthyViolin.jpg'
+            },
+            {
+                id: 'Critical Thinking',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/ScienceProject.jpg'
+            },
+            {
+                id: 'Prep for the future',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Graduation.jpg?v=1663019366821'
+            },
+        ];
+
+        queue.loadManifest(images);
+
+        function handleProgress(event) {
+            console.log(event.progress);
+            document.getElementById('loading').innerHTML = "Loading images... " + Math.round(event.progress * 100) + "%"
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        function handleLoad(event) {
+            var img = new Image();
+            img.src = event.item.src;
+            preloaded.appendChild(img);
+        }
+
+        function handleComplete() {
+            slideshow();
+            document.querySelector('.main-container').classList.add('loaded');
+            console.log('done');
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        let prev = false;
+        let current = false;
+        let next = false;
+        let ix = 0;
+        let imganim = ['img-1','img-2','img-3','img-4'];
+        let count = 0;
+        function slideshow() {
+            if (prev) {
+                document.getElementById('main-container').removeChild(prev[0]);
+                document.getElementById('main-container').removeChild(prev[1]);
+            }
+            prev = current;
+            current = next;
+            next = [document.createElement('div'), document.createElement('div')];
+            next[0].classList.add('img');
+            next[0].classList.add(imganim[ix % imganim.length]);
+            next[0].style.backgroundImage = `url(${images[ix].src})`;
+            next[0].style.zIndex = `${-count}`;
+            next[1].classList.add('title');
+            next[1].classList.add('title-1');
+            next[1].innerHTML = images[ix].id;
+            document.getElementById('main-container').appendChild(next[0]);
+            document.getElementById('main-container').appendChild(next[1]);
+            ix = (ix + 1) % images.length;
+            count++;
+            setTimeout(slideshow, 5000);
+        }
+    </script>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+  </body>
+</html>

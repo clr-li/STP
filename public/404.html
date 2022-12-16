@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Page Not Found</title>
+
+    <!-- update the version number as needed -->
+    <!-- <script defer src="/__/firebase/9.9.2/firebase-app-compat.js"></script> -->
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/9.9.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-performance-compat.js"></script> -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <!-- <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+
+    <main id="content">
+      <article id="message">
+        <h2>404</h2>
+        <h1>Page Not Found</h1>
+        <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
+        <h3>What can I do about this?</h3>
+        <a href="/">Return to the site</a></br>
+        <a href="/contact.html">Report Problem</a>
+      </article>
+    </main>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+        } catch (e) {
+          console.error(e);
+        }
+      });
+    </script> -->
+  </body>
+</html>

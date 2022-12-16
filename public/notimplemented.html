@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Seattle Tutoring Partners</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png"/>
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+    
+    <main id="content">
+        <article id="message">
+            <h2 id="feature">Contact Us</h2>
+            <h1>Not Implemented Yet</h1>
+            <p>This page hasn't been implemented yet. For now, contact info.seattletutoring@gmail.com</p>
+        </article>
+    </main>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const feature = urlParams.get('feature');
+      document.getElementById('feature').innerHTML = feature;
+    </script>
+  </body>
+</html>

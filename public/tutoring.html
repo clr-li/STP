@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Seattle Tutoring Partners</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png"/>
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+
+    <main id="content">
+      <article id="article">
+        <h1 class="smaller"><img src="/assets/logo.png">eattle Tutoring Partners</h1>
+        <h2>Tutoring</h2>
+        <br>
+        <p>
+          Click on the programs below to learn about the qualifications of our tutors:
+        </p>
+        <br>
+        
+        <div class="row">
+          <div class="column">
+              <h3>Academic Subjects</h3>
+              <ul>
+                <li><a class="subject" href="/about.html?search=math#Meet%20Our%20Tutors">Math</a></li>
+                <li><a class="subject" href="/about.html?search=English#Meet%20Our%20Tutors">English</a></li>
+                <li><a class="subject" href="/about.html?search=computer%20science#Meet%20Our%20Tutors">Computer Science</a></li>
+                <li><a class="subject" href="/about.html?search=science#Meet%20Our%20Tutors">Science</a></li>
+                <li style="font-size: 1.3em;">Foreign Language (<a style="font-size: 1em;" class="subject" href="/about.html?search=Chinese#Meet%20Our%20Tutors">Chinese</a>, <a style="font-size: 1em;" class="subject" href="/about.html?search=Danish#Meet%20Our%20Tutors">Danish</a>)</li>
+              </ul>
+          </div>
+          <div class="column" style="width: 2%; border: none;"></div>
+          <div class="column">
+            <h3>Test Preparation</h3>
+            <ul>
+              <li><a class="subject" href="/about.html?search=SAT#Meet%20Our%20Tutors">SAT</a></li>
+              <li><a class="subject" href="/about.html?search=ACT#Meet%20Our%20Tutors">ACT</a></li>
+              <li><a class="subject" href="/about.html?search=MATHCOUNTS%20math#Meet%20Our%20Tutors">MATHCOUNTS</a></li>
+              <li><a class="subject" href="/about.html?search=USACO%20computer science#Meet%20Our%20Tutors">USACO</a></li>
+              <li><a class="subject" href="/about.html?search=AMC%20math#Meet%20Our%20Tutors">AMC</a></li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="column">
+              <h3>Music Lessons</h3>
+              <ul>
+                <li><a class="subject" href="/about.html?search=violin#Meet%20Our%20Tutors">Violin</a></li>
+                <li><a class="subject" href="/about.html?search=piano#Meet%20Our%20Tutors">Piano</a></li>
+                <li><a class="subject" href="/about.html?search=clarinet#Meet%20Our%20Tutors">Clarinet</a></li>
+              </ul>
+          </div>
+          <div class="column" style="width: 2%; border: none;"></div>
+          <div class="column">
+            <h3>Other</h3>
+            <ul>
+              <li><a class="subject" href="/about.html?search=chess#Meet%20Our%20Tutors">Chess</a></li>
+              <li><a class="subject" href="/about.html?search=art#Meet%20Our%20Tutors">Art</a></li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div style="margin-left: -24px;width: calc(100% + 48px);padding: 20px;background-color:#6f42c1;margin-bottom: 20px;position: relative;text-align: center;">
+          <div style="display: inline-block;"><i style="padding: 20px;background-color: white;width: 114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: 20px;" class="fa fa-desktop"></i>
+            <p style="color: white;">Online</p></div>
+          <div style="display: inline-block;"><i style="padding: 20px;background-color: white;width: 114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: 20px;" class="fa fa-book"></i>
+            <p style="color: white;">UW Libraries</p></div>
+          <div style="display: inline-block;"><i style="padding: 20px;background-color: white;width: 114px;border-radius: 50%;color: #c300ff;font-size: 4em;display: inline-block;margin: 20px;" class="fa fa-home"></i>
+            <p style="color: white;">Bothell Area</p></div>
+        </div>
+        <h3>Pricing</h3>
+        <div class="price"></div>
+      </article>
+    </main>
+    
+    <script>
+      let contentHTML = `<button id="elementary" 
+      onclick="toggleQualifications(this, '$60 per hour')" 
+      style="background-color: white;border-color: #6f42c1;border-radius: 10px;margin: 0;width: auto;padding: 5px 16px;margin-top: 8px;margin-right: 4px;height: auto;font-size: 1.3em;">
+      Elementary Students
+      </button>
+      <button id="middle" 
+      onclick="toggleQualifications(this, '$70 per hour')" 
+      style="background-color: white;border-color: #6f42c1;border-radius: 10px;margin: 0;width: auto;padding: 5px 16px;margin-top: 8px;margin-right: 4px;height: auto;font-size: 1.3em;">
+      Middle School Students
+      </button>
+      <button id="high" 
+      onclick="toggleQualifications(this, '$80 per hour')" 
+      style="background-color: white;border-color: #6f42c1;border-radius: 10px;margin: 0;width: auto;padding: 5px 16px;margin-top: 8px;margin-right: 4px;height: auto;font-size: 1.3em;">
+      High School Students
+      </button>`;
+      document.getElementsByClassName("price")[0].innerHTML = contentHTML;
+      
+      function toggleQualifications(btn, newText) {
+        let nextText = btn.innerHTML;
+        btn.onclick = () => { toggleQualifications(btn,nextText) };
+        btn.innerHTML = newText;
+      }
+    </script>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+  </body>
+</html>

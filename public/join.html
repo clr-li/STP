@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Seattle Tutoring Partners</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png"/>
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+
+    <main id="content">
+      <article id="article">
+        <h1 class="smaller"><img src="/assets/logo.png">eattle Tutoring Partners</h1>
+        <h2>Join Us</h2>
+        <center>
+        <div class="col contactform">
+          <form id="form">
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Full Name" name="name" id="name" required />
+              <label for="name" class="form__label">Name*</label>
+            </div>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Email" name="email" id="email" required />
+              <label for="email" class="form__label">Email*</label>
+            </div>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Phone" name="phone" id="phone" required />
+              <label for="phone" class="form__label">Phone*</label>
+            </div>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Address" name="address" id="address" required />
+              <label for="address" class="form__label">Address*</label>
+            </div>
+            
+<!--        trying to figure out how to submit a form before adding files
+            <div class="form__group field">
+              <input type="file" class="hide_file" placeholder="Resume" name="resume" id="resume"/>
+              <label for="resume" style="border-bottom:none;padding-top: 20px;padding-bottom:0px; font-size:1.3em;" class="form__label">Upload Resume*</label>
+            </div> -->
+            
+              <br><br><br>
+              <input type="submit" value="Submit" style="font-size:2em; padding: 8px; min-width: 80%; border-radius: 10px; background-color: #c300ff; color: white; border-color: #5218bd">
+            </form>
+          </div>
+          </center>
+        
+      </article>
+    </main>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+    
+    <script> // took code from the contact.html page
+      function submitGoogleForm(url) {
+        let iframe = document.createElement('iframe');
+        iframe.src = url;
+        iframe.style.height = "0px";
+        iframe.style.border = "none";
+        document.body.appendChild(iframe);
+        iframe.onload = () => { document.body.removeChild(iframe) };
+      }
+      
+      function getGoogleFormURL(NAME, EMAIL, PHONE, ADDRESS) { // changed the question ids and the form url
+        let url = `https://docs.google.com/forms/d/e/1FAIpQLSdS7P6SG0XB7be1muO2plGWZg9YdvbTzFtFPXDHCpyHl0KXcA/formResponse?usp=pp_url&entry.1096361901=${NAME.replaceAll(' ', '+')}&entry.715299173=${EMAIL.replaceAll(' ', '+')}&entry.376486434=${PHONE.replaceAll(' ', '+')}&entry.1511644158=${ADDRESS.replaceAll(' ', '+')}&submit=Submit`;
+        return url;
+      }
+      
+      function validate(e) { // called when submit is pressed
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let phone = document.getElementById('phone').value;
+        let address = document.getElementById('address').value;
+
+        let url = getGoogleFormURL(name, email, phone, address);
+        submitGoogleForm(url);
+      }
+      document.getElementById('form').addEventListener('submit', validate);
+    </script>
+  </body>
+</html>

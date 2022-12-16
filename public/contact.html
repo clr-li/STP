@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Seattle Tutoring Partners</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png"/>
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+
+    <main id="content">
+      <article id="article">
+        <h1 class="smaller"><img src="/assets/logo.png">eattle Tutoring Partners</h1>
+        <h2>Contact Us</h2>
+        <div style="text-align: center">
+          <h4 class="subtitle">
+            Let's start a conversation about your tutoring goals
+          </h4>
+          <br>
+          <div class="flex">
+            <div class="col" style="text-align: left">
+              <h4 class="subtitle">
+                Ask how we can help you:
+              </h4>
+              <br>
+              <p>
+                Learn more about our <a href="/tutoring.html">programs</a> and read about <a href="/about.html#Our%20Mission">our mission</a>.
+              </p>
+              <br>
+              <p>
+                Get to know our <a href="/about.html#Meet%20Our%20Tutors">qualified tutors</a> and read what <a href="/about.html#Reviews">families</a> say about us.
+              </p>
+              <br>
+              <p>
+                See us in action on <a href="/notimplemented.html?feature=No%20Social%20Media%20Yet">Instagram</a> or <a href="/notimplemented.html?feature=Join%20Us">join the cause</a>.
+              </p>
+              <br><br>
+              <h4 class="subtitle">
+                Get in touch:
+              </h4>
+              <br>
+              <p>
+                Phone: <a href="tel:+17243836080">+1 (724) 383-6080‬</a>
+              </p>
+              <br>
+              <p>
+                Email: <a href="mailto:info.seattletutoring@gmail.com">info.seattletutoring@gmail.com‬</a>
+              </p>
+              <br>
+              <p>
+                Sign up for tutoring to schedule an in-person or online meeting/trial-lesson by submitting this contact form.
+              </p>
+              <br>
+              <p>
+                We'll get back to you within 1-3 business days except during school vacations.
+              </p>
+              <br>
+            </div>
+            <div class="col contactform">
+              <form id="form">
+                <div class="form__group field">
+                  <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+                  <label for="name" class="form__label">Name*</label>
+                </div>
+                <div class="form__group field">
+                  <input type="input" class="form__field" placeholder="Email" name="email" id="email" required />
+                  <label for="email" class="form__label">Email*</label>
+                </div>
+
+                <br>
+                <h4>
+                  I'm looking to...*
+                </h4>
+                <div class="inputGroup">
+                  <input id="signup" name="purpose" type="radio" required/>
+                  <label for="signup">Sign up for tutoring</label>
+                </div>
+                <div class="inputGroup">
+                  <input id="question" name="purpose" type="radio" required/>
+                  <label for="question">Ask a question</label>
+                </div>
+                <div class="inputGroup">
+                  <input id="cancel" name="purpose" type="radio" required/>
+                  <label for="cancel">Cancel an appointment</label>
+                </div>
+
+                <div id="tutoring-options" style="display: none">
+                  <br>
+                  <h4>
+                    Possible Modalitie(s):
+                  </h4>
+                  <div class="inputGroup">
+                    <input id="online" name="online" type="checkbox"/>
+                    <label for="online">Online</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="uw" name="uw" type="checkbox"/>
+                    <label for="uw">UW Library</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="bothell" name="bothell" type="checkbox"/>
+                    <label for="bothell">Bothell Library</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="home" name="home" type="checkbox"/>
+                    <label for="home">My House (Bothell)</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="tutor" name="tutor" type="checkbox"/>
+                    <label for="tutor">Tutor's House (Bothell)</label>
+                  </div>
+                  <br>
+                  <h4>
+                    Desired Frequency:
+                  </h4>
+                  <div class="inputGroup">
+                    <input id="weekly" name="frequency" type="radio"/>
+                    <label for="weekly">Once a week per subject</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="more" name="frequency" type="radio"/>
+                    <label for="more">More than once a week per subject</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="less" name="frequency" type="radio"/>
+                    <label for="less">Less than once per week per subject</label>
+                  </div>
+                  <br>
+                  <h4>
+                    Desired Duration:
+                  </h4>
+                  <div class="inputGroup">
+                    <input id="hour" name="duration" type="radio"/>
+                    <label for="hour">One hour lessons</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="plushalf" name="duration" type="radio"/>
+                    <label for="plushalf">Longer lessons</label>
+                  </div>
+                  <div class="inputGroup">
+                    <input id="minushalf" name="duration" type="radio"/>
+                    <label for="minushalf">Shorter lessons</label>
+                  </div>
+                  
+                  <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Subjects" name="subjects" id="subjects"/>
+                    <label for="subjects" class="form__label">Subject(s)</label>
+                  </div>
+                  <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Grade Level" name="level" id="level"/>
+                    <label for="level" class="form__label">Grade Level</label>
+                  </div>
+                </div>
+                
+                <div id="availability-options" style="display: none">
+                  <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Availability" name="availability" id="availability"/>
+                    <label for="availability" class="form__label">Availability</label>
+                  </div>
+                </div>
+
+                <br>
+                <h4>
+                  <label for="details">Details and comments:</label>
+                </h4>
+                <textarea id="details" name="details" rows="5" cols="50" style="max-width: 100%; min-width: 100%; margin-top: 10px; border-radius: 10px; overflow: hidden"></textarea>
+                
+                <br><br>
+                <input type="submit" value="Submit" style="font-size:2em; padding: 8px; min-width: 80%; border-radius: 10px; background-color: #c300ff; color: white; border-color: #5218bd">
+              </form>
+            </div>
+          </div> <!-- flex end -->
+        </div>         
+      </article>
+    </main>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+    
+    <script> <!-- Contact Form - script comes after footer.js so eventlister stays bound -->
+      document.body.addEventListener('click', () => {
+        console.log(document.getElementById('signup').checked)
+        if (document.getElementById('signup').checked) {
+          document.getElementById('tutoring-options').style.display = "block";
+          document.getElementById('availability-options').style.display = "block";
+        } else {
+          document.getElementById('tutoring-options').style.display = "none";
+          document.getElementById('availability-options').style.display = "none";
+        }
+      });
+      
+      function submitGoogleForm(url) {
+        let iframe = document.createElement('iframe');
+        iframe.src = url;
+        iframe.style.height = "0px";
+        iframe.style.border = "none";
+        document.body.appendChild(iframe);
+        iframe.onload = () => { document.body.removeChild(iframe) };
+      }
+      
+      function getGoogleFormURL(NAME, EMAIL, PURPOSE, MODALITIES, SUBJECT, FREQUENCY, AVAILABILITY, DETAILS) {
+        let modalitystr = "";
+        for (let i = 0; i < MODALITIES.length; i++) {
+          modalitystr += `&entry.319286844=${MODALITIES[i].replaceAll(' ', '+')}`;
+        }
+        let url = `https://docs.google.com/forms/d/e/1FAIpQLSfgR4TEwD4fzcCjgkxhOSk0_E_OjBfct-xhrxj9olN4fAp3Pg/formResponse?usp=pp_url&entry.962484112=${NAME.replaceAll(' ', '+')}&entry.1227717105=${EMAIL.replaceAll(' ', '+')}&entry.1358368228=${PURPOSE.replaceAll(' ', '+')}${modalitystr}&entry.573979459=${SUBJECT.replaceAll(' ', '+')}&entry.871914413=${FREQUENCY.replaceAll(' ', '+')}&entry.842154985=${AVAILABILITY.replaceAll(' ', '+')}&entry.1346721990=${DETAILS.replaceAll(' ', '+')}&submit=Submit`;
+        return url;
+      }
+      
+      var labels = document.getElementsByTagName('LABEL');
+      for (var i = 0; i < labels.length; i++) {
+          if (labels[i].htmlFor != '') {
+               var elem = document.getElementById(labels[i].htmlFor);
+               if (elem)
+                  elem.label = labels[i];         
+          }
+      }
+      
+      function validate() { // called when submit is pressed
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let purpose = document.querySelector('input[name="purpose"]:checked').label.innerHTML;
+        try {
+          var modalities = [...document.querySelectorAll('input[type="checkbox"]:checked')].map((elem) => { return elem.label.innerHTML; });
+        } catch {
+          var modalities = [""];
+        }
+        try {
+          var subject = document.getElementById('subjects').value;
+        } catch {
+          var subject = "";
+        }
+        try {
+          var level = document.getElementById('level').value;
+        } catch {
+          var level = "";
+        }
+        try {
+          var frequency = document.querySelector('input[name="frequency"]:checked').label.innerHTML;
+        } catch {
+          var frequency = "";
+        }
+        try {
+          var duration = document.querySelector('input[name="duration"]:checked').label.innerHTML;
+        } catch {
+          var duration = "";
+        }
+        try {
+          var availability = document.getElementById('availability').value;
+        } catch {
+          var availability = "";
+        }
+        try {
+          var details = "Duration: " + duration + " | " + "Grade Level: " + level + " | " + document.getElementById('details').value;
+        } catch {
+          var details = "";
+        }
+        let url = getGoogleFormURL(name, email, purpose, modalities, subject, frequency, availability, details);
+        submitGoogleForm(url);
+      }
+      document.getElementById('form').addEventListener('submit', validate);
+    </script>
+  </body>
+</html>

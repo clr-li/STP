@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Seattle Tutoring Partners</title>
+    <link rel="icon" type="image/png" href="/assets/logo.png"/>
+
+    <link rel = "stylesheet" type = "text/css" href = "/style.css">
+
+    <link rel="stylesheet/less" type="text/css" href="slideshow.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  </head>
+  <body>
+    <script src="/navbar.js"></script>
+
+    <main id="content">
+      <article id="article">
+        <h1 class="smaller"><img src="/assets/logo.png">eattle Tutoring Partners</h1>
+        <h2>About Us</h2>
+        <div class="slideshow">
+            <div id="main-container" class="main-container">
+                <div class="loader-container">
+                    <div class="loader"> </div>
+                    <p id="loading">Loading images...</p>
+                </div>
+            </div>
+            <div class="preloaded"></div>
+        </div>
+        <section id="Who We Are">
+            <h3>Who We Are</h3>
+            <p>
+                We are a community of life-long learners and teachers excited to share the experience we've gained as college students, high school students, concertmasters, 
+                science olympians, and beyond. Founded by Claire Li and Alexander Metzger in 2022, Seattle Tutoring Partners has passionately been bringing students and teachers 
+                together ever since.
+            </p>
+            <br>
+            <div style="width: 100%; text-align: center">
+                <img src="/assets/founders.jpg" class="goldImage">
+            </div>
+        </section>
+        <br>
+        <section id="Our Mission" style="margin-top: max(-50px, -5vw)">
+            <h3>Our Mission</h3>
+            <p>
+                Here at Seattle Tutoring Partners, we don't believe in education for the masses. We believe in education for the many individuals. 
+                Because whether you're an advanced super-genious, someone who hasn't had a lot of help and feels intimidated by the mere mention 
+                of the quardratic formula, or somewhere inbetween, there is no one-size-fits-all. When it comes to learning, we all do it differently,
+                and naturally we at STP believe in custom tailoring the teaching experience to our learners.
+            <br><br>
+                <b style="color:blueviolet">Our goal is to provide what large classrooms cannot: personalized one-on-one lessons with caring community 
+                tutors who meet the learners where they're at and role-model positive behaviors both academically and personally.</b> Whether it's 
+                your education or that of a son or daughter, we aim to provide the tutor/student-pairing and individualized lesson plan that can inspire a life-long love for learning.
+            </p>
+        </section>
+        <br>
+        <section id="Meet Our Tutors">
+            <h3>Meet Our Tutors</h3>
+            <p>
+                Creative people from all over Seattle with a passion for learning and teaching. Some have channeled their passion through Private Tutoring
+                and teaching organizations like Kumon. Others have volunteered with local schools and programs. They have all chosen to partner with the Seattle
+                Tutoring Partners to combine experience with resources and inspire. Meet them below (click colored subjects for details): 
+            </p>
+            <br>
+            <div id="Meet-Our-Tutors">
+                <input id="searchstr" type="text">
+                <button onclick="search()"><i class="fa fa-search"></i></button>
+                <div style="padding-left: 10px; padding-right: 10px;">
+                    <div class="card is-loading">
+                        <div class="intro"></div>
+                        <div class="image"></div>
+                        <div class="content"></div>
+<!--                           alex help first of all, not sure what the h2 and p tags below are for, also, it seems like i can't add anymore divs below the p tag for the qualification buttons. like the test div i added below doesn't show up -->
+<!-- It was not showing up because you accidentally added it inside the 'content' class div which has its contents overwritten by js; the h2 and p tags were not necessary, I generate them in js now (I also added code to add them for your 'intro' div). The idea is that when no content is displayed, the old content is replaced by empty tags that are animated as placeholders. So that's why we need extra empty tags
+very cool stuff. good to know for next time. thank you! (you can delete these comments when you see it lol)-->
+                        <div class="subjects"></div>
+                    </div>
+                    <div class="card is-loading">
+                        <div class="intro"></div>
+                        <div class="image"></div>
+                        <div class="content"></div>
+                        <div class="subjects"></div>
+                    </div> 
+                    <div class="card is-loading">
+                        <div class="intro"></div>
+                        <div class="image"></div>
+                        <div class="content"></div>
+                        <div class="subjects"></div>
+                    </div> 
+                </div>
+                <div id="pageNavigator" style="text-align: center;">
+                    <button disabled class="round-btn">1</button>
+                    <button disabled class="round-btn">2</button>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="Reviews">
+            <h3>What Families Say About Us</h3>
+            <div class="review">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <p>
+                Placeholder review while the web developers figure out the code.
+              </p><p style="float: right">- Placeholder Name</p><div style="clear: right"></div>
+            </div>
+            <div class="review">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <p>
+                Before joining STP as a tutor, I took (and still take) chinese lessons from Claire. She is a fantastic teacher, always comes well prepared with textbooks, exercises, and a lesson plan designed specifically to help me. It is clear she not only understands the language, but also understands what it is like to learn it. 5/5 stars recommend her teaching.
+              </p><p style="float: right">- Alexander Metzger</p><div style="clear: right"></div>
+            </div>
+            <div class="review">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <p>
+                Placeholder review while the web developers figure out the code.
+              </p><p style="float: right">- Placeholder Name</p><div style="clear: right"></div>
+            </div>
+        </section>
+      </article>
+    </main>
+    
+    <script> // meet our tutors code
+        let tutorData = [];
+        fetch("/aboutTutors.json").then((response) => { response.json().then((data) => { tutorData = data; ixs = [...Array(tutorData.length).keys()]; initialize(); }); }); // fetch tutorData from aboutTutors.json
+        
+        let pictures = [...document.getElementsByClassName("image")];
+        // let contents = [...document.getElementsByClassName("content")];
+        // let cards = [...document.getElementsByClassName("card")];
+        // let letpageNavigator = document.getElementById('pageNavigator'); 
+      
+        let ixs = []; // array with the ixs in tutorData that are supposed to be displayed for the current search (in the order it is in this array)
+        const pageSize = pictures.length;
+        
+        function showPage(number) {
+          let startIX = number * pageSize;
+          if (startIX >= ixs.length || tutorData.length == 0) return;
+          
+          for (let i = 0; i < pageSize; i++) {
+            if (startIX + i >= ixs.length) {
+              [...document.getElementsByClassName("image")][i].style.backgroundImage = "";
+              [...document.getElementsByClassName("card")][i].classList.add("is-loading");
+              [...document.getElementsByClassName("content")][i].innerHTML = "<h3></h3><p></p>";
+              [...document.getElementsByClassName("intro")][i].innerHTML = "<h3></h3><h3></h3>";
+              [...document.getElementsByClassName("subjects")][i].innerHTML = "<h3></h3>";
+            } else {
+              let tutor = tutorData[ixs[startIX + i]];
+              let introHTML = `
+              <h3>${tutor.name}</h3>
+              <button onclick="toggleQualifications(this, 'Status')" class="status">${tutor.status}</button>
+              <h4>${tutor.education} — ${tutor.yearsTutored + ((tutor.yearsTutored == 1) ? " year" : " years")} of tutoring</h4>
+              `;
+              [...document.getElementsByClassName("intro")][i].innerHTML = introHTML;
+              [...document.getElementsByClassName("image")][i].style.backgroundImage = (tutor.imageURL != "")? `url(${tutor.imageURL})` : "url(/assets/logo.png)";
+              [...document.getElementsByClassName("card")][i].classList.remove("is-loading");
+              let contentHTML = `
+              <p>${tutor.bio}</p>
+              `;
+              [...document.getElementsByClassName("content")][i].innerHTML = contentHTML;
+              let buttonHTML = '';
+              for (let j = 0; j < tutor.subjects.length; j++) {
+                  let id = "btn" + i + j;
+                  buttonHTML += 
+                    `<button id="${id}" 
+                    onclick="toggleQualifications(${id},\`${tutor.subjects[j].subject} — ${tutor.subjects[j].qualification}\`)" 
+                    style="background-color:${tutor.subjects[j].color}"
+                    >${tutor.subjects[j].subject}</button>`;
+              }
+              [...document.getElementsByClassName("subjects")][i].innerHTML = buttonHTML;
+            }
+          }
+          
+          let pages = Math.ceil(ixs.length / pageSize);
+          let buttonshtml = "";
+          for (let i = 0; i < pages; i++) {
+            buttonshtml += (i == number)? `<button disabled class="round-btn">${number+1}</button>` : `<button onclick="showPage(${i})" class="round-btn">${i+1}</button>`;
+          }
+          document.getElementById('pageNavigator').innerHTML = buttonshtml;
+        }
+      
+        function toggleQualifications(btn, newText) {
+          let nextText = btn.innerHTML;
+          btn.onclick = () => { toggleQualifications(btn,nextText) };
+          btn.innerHTML = newText;
+        }
+      
+        function stringSimilarity(str1, str2, gramSize = 2) {
+          str1 = str1.toLowerCase();
+          str2 = str2.toLowerCase();
+          function getNGrams(s, len) {
+            s = ' '.repeat(len - 1) + s.toLowerCase() + ' '.repeat(len - 1);
+            let v = new Array(s.length - len + 1);
+            for (let i = 0; i < v.length; i++) {
+              v[i] = s.slice(i, i + len);
+            }
+            return v;
+          }
+
+          if (!str1?.length || !str2?.length) { return 0.0; }
+
+          //Order the strings by length so the order they're passed in doesn't matter 
+          //and so the smaller string's ngrams are always the ones in the set
+          let s1 = str1.length < str2.length ? str1 : str2;
+          let s2 = str1.length < str2.length ? str2 : str1;
+
+          let pairs1 = getNGrams(s1, gramSize);
+          let pairs2 = getNGrams(s2, gramSize);
+          let set = new Set(pairs1);
+
+          let total = pairs2.length;
+          let hits = 0;
+          for (let item of pairs2) {
+            if (set.delete(item)) {
+              hits++;
+            }
+          }
+          return hits / total;
+        }
+      
+        function getTags(tutor) {
+          let result = "" + tutor.name + " " + tutor.status + " " + tutor.education;
+          for (let i = 0; i < tutor.subjects.length; i++) {
+            result += " " + tutor.subjects[i].subject;
+          }
+          return result;
+        }
+        
+        function search() {
+          let searchstr = document.getElementById('searchstr').value;
+          ixs.sort((a, b) => { // sort in order of decreasing string similarity
+            let bstr = getTags(tutorData[b]);
+            let astr = getTags(tutorData[a]);;
+            return (stringSimilarity(searchstr, bstr,3)+0.03)*bstr.length - (stringSimilarity(searchstr, astr,3)+0.03)*astr.length; 
+          });
+          showPage(0);
+        }
+        
+        // initialize search bar to whatever url says
+        function initialize() {
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const searchstr = urlParams.get('search');
+          document.getElementById('searchstr').value = (searchstr === null) ? "Math" : searchstr;
+          search();
+        }
+    </script>
+    
+    <script> // slideshow code
+        var preloaded = document.querySelector('.preloaded');
+        var queue = new createjs.LoadQueue(true,null,true);
+
+        queue.on('fileload', handleLoad, this);
+
+        queue.on('progress', handleProgress, this);
+
+        queue.on('complete', handleComplete, this);
+
+        let images = [
+            {
+                id: 'Experienced',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Experienced.jpg?v=1660428239001'
+            },
+            {
+                id: 'Professional',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Recital.jpg?v=1660498891464'
+            },
+            {
+                id: 'Caring',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Caring.jpeg?v=1660428360033'
+            },
+            {
+                id: 'Creative',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/Creative.jpg'
+            },
+            {
+                id: 'Cool',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/Cool.jpg'
+            },
+            {
+                id: 'Organized',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=1600'
+            },
+            {
+                id: 'Local',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/seattle.jpg?v=1660426183392'
+            },
+            {
+                id: 'Concertmasters',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/Concertmaster.jpg'
+            },
+            {
+                id: 'Valedictorians',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: 'https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/Valedictorian.jpg?v=1660426801937'
+            },
+            {
+                id: 'Olympiad Winners',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/OlympiadWinner.jpg'
+            },
+            {
+                id: 'Tutors at heart',
+                crossOrigin: true,
+                type: createjs.Types.IMAGE,
+                src: '/assets/TutorAtHeart.jpg'
+            },
+        ];
+
+        queue.loadManifest(images);
+
+        function handleProgress(event) {
+            console.log(event.progress);
+            document.getElementById('loading').innerHTML = "Loading images... " + Math.round(event.progress * 100) + "%"
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        function handleLoad(event) {
+            var img = new Image();
+            img.src = event.item.src;
+            preloaded.appendChild(img);
+        }
+
+        function handleComplete() {
+            slideshow();
+            document.querySelector('.main-container').classList.add('loaded');
+            console.log('done');
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        let prev = false;
+        let current = false;
+        let next = false;
+        let ix = 0;
+        let imganim = ['img-1','img-2','img-3','img-4'];
+        let count = 0;
+        function slideshow() {
+            if (prev) {
+                document.getElementById('main-container').removeChild(prev[0]);
+                document.getElementById('main-container').removeChild(prev[1]);
+            }
+            prev = current;
+            current = next;
+            next = [document.createElement('div'), document.createElement('div')];
+            next[0].classList.add('img');
+            next[0].classList.add(imganim[ix % imganim.length]);
+            next[0].style.backgroundImage = `url(${images[ix].src})`;
+            next[0].style.zIndex = `${-count}`;
+            next[1].classList.add('title');
+            next[1].classList.add('title-1');
+            next[1].innerHTML = images[ix].id;
+            document.getElementById('main-container').appendChild(next[0]);
+            document.getElementById('main-container').appendChild(next[1]);
+            ix = (ix + 1) % images.length;
+            count++;
+            setTimeout(slideshow, 5000);
+        }
+    </script>
+
+    <script src="/footer.js"></script>
+    <script src="/resize.js"></script>
+  </body>
+</html>

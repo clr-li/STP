@@ -1,0 +1,28 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "seattletutoringpartners",
+  "version": "0.0.0",
+  "description": "tutoring company website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node autoserve.js"
+  },
+  "dependencies": {
+    "deta": "^1.1.0",
+    "firebase-tools": "^11.5.0"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

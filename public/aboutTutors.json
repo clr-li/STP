@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Alexander Metzger",
+    "education": "CS student at University of Washington",
+    "yearsTutored": 3.5,
+    "students": 8,
+    "status": "Founder",
+    "imageURL": "https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/TemporaryAlex.jpeg?v=1662437429002",
+    "bio": "Born in Denmark, Alex shares his birth country's values of accessible education and free thinking. During his high school years, he volunteered with local Elementary Schools in the Seattle Area to make music education freely accessible. He has since expanded to more subject areas to share his philosophy of combining learning styles (visual, tactile, explanations, examples) to develop understanding of why patterns form rather than blindly memorizing how they work. This philosophy has guided his own learning as he explored his own passion for Math and Science when he was younger through books and experiments. His understanding later fascillitated him enjoying Science Olympiad, Data Science internships, and research opportunities with Professor Richard at UW.",
+    "subjects": [
+      { "subject": "English", "color": "blue", "qualification": "AP English and CHS Composition. 99th percentile on Reading/Writing SAT" },
+      { "subject": "Math", "color": "green", "qualification": "College level courses through multivariate calculus with 4.0 GPA. 800 out of 800 on the math SAT" },
+      { "subject": "Science", "color": "orange", "qualification": "5's in AP Physics 1+2 and AP Chemistry. Medaled at State and National Science Olympiad competitions" },
+      { "subject": "Computer Science", "color": "gold", "qualification": "Won national ML competitions. Data Science intern with the European Environment Agency" },
+      { "subject": "Danish", "color": "red", "qualification": "Native speaker. Lived in Denmark for 12.5 years. Experienced with teaching techniques for grammar and pronounciation" },
+      { "subject": "Violin", "color": "brown", "qualification": "12 years of practice. Conservatory classes. Seattle Youth Symphony first violin. All State. All Northwest. Concertmaster" },
+      { "subject": "Chess", "color": "grey", "qualification": "Played online competitively for 4 years. 99th percentile on Chess.com. Good with beginners" }
+    ]
+  },
+  {
+    "name": "Claire Li",
+    "education": "CS student at University of Washington",
+    "yearsTutored": 3.5,
+    "students": 8,
+    "status": "Founder",      
+    "imageURL": "https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/TemporaryClaire.jpg?v=1663644656666",
+    "bio": "Through her work as a private tutor, as an intern at a Summer Music School, and as an assistant instructor at Kumon, Claire has experience teaching students of all ages and learning backgrounds. As a curious child, she enjoyed reading and surfing the web at the library. She keeps her students curious by guiding discovery, leading to deeper understanding. Her current book recommendation would be <i>Bad Blood</i> by John Carreyrou.",
+    "subjects": [
+      { "subject": "English", "color": "blue", "qualification": "AP English and Literature. Extensive experience tutoring Elementary and Middle School students" },
+      { "subject": "Math", "color": "green", "qualification": "College level courses through multivariate calculus. Senior Math Department Award Recipient" },
+      { "subject": "Science", "color": "orange", "qualification": "AP Physics. Won State and National Science Olympiad competitions as captain of the Varsity team" },
+      { "subject": "Computer Science", "color": "gold", "qualification": "Proficient in Swift, PHP, Java, and Javascript. Experience with IOS and Web Development" },
+      { "subject": "Chinese", "color": "red", "qualification": "Native speaker (speaks language at home). Experience teaching adults and high school students" },
+      { "subject": "Violin", "color": "brown", "qualification": "School Concertmaster. Seattle Youth Symphony violinist. All State. All Northwest" },
+      { "subject": "Piano", "color": "black", "qualification": "Started studying when 4 years old. Good with beginners and intermediate students" }
+    ]
+  },
+  {
+    "name": "Michelle Li",
+    "education": "Junior at Bothell High School",
+    "yearsTutored": 3,
+    "students": 4,
+    "status": "Tutor",
+    "imageURL": "",
+    "bio": "Michelle academically excels in school and is an artist at heart. She plays the clarinet in wind ensemble and is the head drum major for her school’s marching band. Recently, she picked up the trumpet for jazz band. Her preferred medium is currently oil paints but she has experience with pencil sketches and oil pastels. She is a recipient of the Art Reflections Award of Excellence.",
+    "subjects": [
+      { "subject": "English", "color": "blue", "qualification": "AP English. Extensive experience tutoring Elementary and Middle School students" },
+      { "subject": "Math", "color": "green", "qualification": "5 in Calculus AB. Extensive experience tutoring Elementary and Middle School students" },
+      { "subject": "Clarinet", "color": "#007dc3", "qualification": "6 years practice. Marching band Head Drum Major. All-State" },
+      { "subject": "Art", "color": "#f40085", "qualification": "7 years of practice. Created the logo for this website. Art Reflections Award of Excellence" }
+    ]
+  },
+  {
+    "name": "Emma Le",
+    "education": "Sophemore at Bothell High School",
+    "yearsTutored": 1,
+    "students": 0,
+    "status": "Tutor",
+    "imageURL": "https://cdn.glitch.global/2f6a531f-cfcc-42b6-851a-31c3358c7092/temporaryEmma.jpeg?v=1662589459661",
+    "bio": "Emma has been working with kids for a year as an Assistant Instructor at Cascade Elite. She wants to major in Violin Performance and has interests in History and the Social Sciences. She currently studies violin with former Seattle Symphony Concertmaster, Maria Larionoff.",
+    "subjects": [
+      { "subject": "Violin", "color": "brown", "qualification": "11 years of practice. Conservatory classes. Seattle Youth Symphony violinist. Won Bach Festival, Seattle Young Artist, and Tokonogui Awards" },      
+      { "subject": "Ice Skating, Ballet, and Gymnastics", "color": "deepskyblue", "qualification": "Competitive Figure Skating for 4 years. Completed all US Test Levels. Won gold. Taken ballet and gymnastics lessons" }
+
+    ]
+  }
+]
