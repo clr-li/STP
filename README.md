@@ -1,7 +1,8 @@
 # Seattle Tutoring Partners
 
 A website for a tutoring company. Hosted demo: [https://seattletutoringpartners.web.app/](https://seattletutoringpartners.web.app/)
-![Screen Shot 2022-12-15 at 10 53 54 PM](https://user-images.githubusercontent.com/111320104/208040201-25a50160-ec66-4ce9-9982-571e25e3794c.jpg)
+![image](https://github.com/clr-li/STP/assets/97496861/2a9dfaff-c317-499c-a60f-ef5b33735df7)
+
 
 ## How to edit
 
